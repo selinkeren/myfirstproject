@@ -10,7 +10,7 @@
   " header "
   " main "
   " aside "
-  "footer ";
+  " footer ";
 }
 @media(min-width:900px){
   .grid {
@@ -24,70 +24,24 @@
     grid-template-areas: 
     " header header header header"
     " aside main main main "
-    "footer footer footer footer ";
+    " footer footer footer footer ";
   }
-
 }
-
-
 header,
 aside,
 main,
 footer {
   background-color: #CCFBFF ;
   padding: 1em;
-
 }
-
-
 header{ 
   grid-area: header;
-
 }
-
-
 main{
   grid-area: main;
 }
-
 footer {
   grid-area: footer;
-}
-
-aside{
- grid-area: aside;
- 
-}
-header{
-  background-color:rgb(158, 223, 144) ;
-  text-align:left;
-  text-decoration-style:initial;
-  font-style:initial;
-  font-size: 15px;
- 
-}
-ul.navbar{
-  list-style-type: none;
-  margin: 5px;
-  padding: 5px;
-  overflow: hidden;
-  background-color:rgb(109, 173, 226);
- 
-}
-.navbar > li{
-  float: left;
-}
-.navbar > li a{
-  display: block;
-  color: rgb(219, 32, 179);
-  text-align: center;
-  padding: 24px 26px;
-  text-decoration: none;
-
-}
- 
-.navbar > li a:hover{
-  background-color:rgb(170, 100, 235);
 }
 .postcard{
   box-shadow: 0 4px 8px 0 black;
@@ -100,18 +54,21 @@ ul.navbar{
 .postcard:hover{
   box-shadow: 0 8px 16px 0 mediumorchid;
 }
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 .intro{
   padding: 2px 16px;
   text-align: center;
 }
-
 .flex-container{
   display:flex;
   flex-direction: column;
   border: 5px solid blue;
-  margin: 2px;
-  height: 70%;
-   
 }
 .flex-container > div {
   width: 2fr;
@@ -120,20 +77,19 @@ ul.navbar{
   line-height: 17px;
   font-size: 15px;
   flex-wrap: nowrap;
-  
- 
+}
+.flex-container > img{
+  width: 100%;
 }
 .rd1:hover{
   background-color: hotpink;
 }
 .rd2:hover{
   background-color: hotpink;
-
 }
 .rd3:hover{
   background-color: hotpink;
 }
-
 main{
   text-align:center;
   font-size: 12px;
@@ -146,7 +102,6 @@ main{
   border:5px outset indigo;
   justify-content: center;
   align-items: center;
-
 }
 .flex-container2 > div{
   background-color: pink;
@@ -160,7 +115,6 @@ main{
   text-align: center;
   padding: 5px;
   justify-content: space-between;
-  
  }
  .myself:hover{
    background-color: hotpink;
@@ -187,7 +141,6 @@ main{
   text-align: center;
   padding:5;
   font-size: 12px;
-
 }
 .myself{
   font-size: 13px;
@@ -208,6 +161,7 @@ body{
   }
 }
 @import"blogpost.css";
+@import"header.css";
 
 
 
